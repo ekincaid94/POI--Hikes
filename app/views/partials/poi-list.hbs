@@ -1,0 +1,41 @@
+<div class="uk-margin uk-width-2xlarge uk-margin-auto uk-card uk-card-default uk-card-body uk-box-shadow-large">
+  <table class="uk-table">
+    <caption>
+      Hike Suggestions
+    </caption>
+    <thead>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Distance</th>
+    <th>Description</th>
+    <th>Category</th>
+    <th>Added By</th>
+    <th> <img width="100"></th>
+    <!--   <th>Picture</th> -->
+    <th>Update</th>
+    <th>Remove</th>
+    <div class="uk-margin">
+      <button class="uk-button uk-button-primary uk-button-large uk-width-1-1">Delete</button>
+    </div>
+    </thead>
+    <tbody class="uk-text-left">
+    {{#each pois}}
+      <tr>
+        <td>{{name}}</td>
+        <td>{{location}}</td>
+        <td>{{distance}}</td>
+        <td>{{description}}</td>
+        <td>{{category}}</td>
+        <td>{{creator.firstName}} {{creator.lastName}}</td>
+        <td>{{image}}</td>
+        <td><a href="updatePoi/{{_id}}">
+          <button class="negative ui right floated button">Update</button>
+        </a></td>
+        <td><a href="deletePoi/{{_id}}">
+          <button class="negative ui right floated button">Delete</button>
+        </a></td>
+      </tr>
+    {{/each}}
+    </tbody>
+</div>
+

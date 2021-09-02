@@ -1,0 +1,45 @@
+{
+  "poiService": "http://localhost:3000",
+    "users": [
+      {
+        "firstName": "Emma",
+        "lastName": "Kincaid",
+        "email": "emma@kincaid.com",
+        "password": "PublicKnowledge"
+      },
+      {
+        "firstName": "Mary",
+        "lastName": "Walsh",
+        "email": "mary@w.com",
+        "password": "PublicKnowledge"
+      }
+    ],
+    "newUser": {
+      "firstName": "Lisa",
+      "lastName": "Simpson",
+      "email": "lisa@simpson.com",
+      "password": "PublicKnowledge"
+    },
+    "poi": [
+      {
+        "name": "Mt. Brandon",
+        "location":"Kerry",
+        "distance":"22k",
+        "description":"xyz xyz xyz",
+        "category":"South"
+      },
+      {"name": "Carauntoohil",
+        "location":"Kerry",
+        "distance":"48k",
+        "description":"xzzz zzzz zzzz",
+        "category":"South","
+      },
+      {
+        "name": "Ballycotton Cliff Walk",
+        "location":"Cork",
+        "distance":"11k",
+        "description":"ccc ccc ccc",
+        "category": "South"
+      }
+    ]
+  }

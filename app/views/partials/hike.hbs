@@ -1,0 +1,119 @@
+<div class="uk-margin uk-width-2xlarge uk-margin-auto uk-card uk-card-default uk-card-body uk-box-shadow-large">
+  <form class="uk-form-stacked uk-text-left" action="/hike" method="POST">
+    <div class="uk-container">
+          <div class="uk-flex uk-flex-center uk-flex-middle uk-margin">
+            <div class="uk-width-2-3@m uk-card uk-card-default uk-padding-small uk-text-center">
+              <div class="title"> Hikes Index </div>
+            </div>
+          </div>
+
+<table id="hike-list" class="uk-table uk-table-divider">
+  <caption> Hike Index :</caption>
+  <thead>
+  <tr>
+    <th>Location</th>
+    <th>Distance</th>
+    <th>Brief Description</th>
+    <th>Category</th>
+    <th>Image</th>
+    <td><a href="/delete-hike/{{_id}}"><i class="far fa-trash-alt fa-1x" style="color:rgb(220,7,55)" title="Delete" pos="bottom" uk-tooltip></i>
+    </a></td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Cork</td>
+    <td>5k</td>
+    <td>Suitable for Beginner</td>
+    <td>South</td>
+    <td><img width="300" src="images/hike1.jpg"></td>
+    <td><a href="/delete-hike/{{_id}}"><i class="far fa-trash-alt fa-1x" style="color:rgb(220,7,55)" title="Delete" pos="bottom" uk-tooltip></i></td>
+  </tr>
+  <tr>
+    <td>Kerry</td>
+    <td>10k</td>
+    <td>Intermediate level</td>
+    <td>South</td>
+    <td><img width="300" src="images/hike2.jpg"></td>
+    <td><a href="/delete-hike/{{_id}}"><i class="far fa-trash-alt fa-1x" style="color:rgb(220,7,55)" title="Delete" pos="bottom" uk-tooltip></i></td>
+  </tr>
+  <tr>
+    <td>Galway</td>
+    <td>20kk</td>
+    <td>Advanced</td>
+    <td>West</td>
+   <td> <img width="300" src="images/hike3.jpg"></td>
+    <td><a href="/delete-hike/{{_id}}"><i class="far fa-trash-alt fa-1x" style="color:rgb(220,7,55)" title="Delete" pos="bottom" uk-tooltip></i></td>
+  </tr>
+  <tr>
+    <td>Dublin</td>
+    <td>12k</td>
+    <td>Intermediate level</td>
+    <td>East</td>
+    <td><img width="300" src="images/hike4.jpg"></td>
+    <td><a href="/delete-hike/{{_id}}"><i class="far fa-trash-alt fa-1x" style="color:rgb(220,7,55)" title="Delete" pos="bottom" uk-tooltip></i></td>
+  </tr>
+  <tr>
+    <td>Westmeath</td>
+    <td>33k</td>
+    <td>Intermediate level</td>
+    <td>Midlands</td>
+  <td><img width="300" src="images/hike5.jpg"></td>
+  <td><a href="/delete-hike/{{_id}}"><i class="far fa-trash-alt fa-1x" style="color:rgb(220,7,55)" title="Delete" pos="bottom" uk-tooltip></i></td>
+  </tr>
+  <tr>
+    <td>Donegal</td>
+    <td>12k</td>
+    <td>Beginner level</td>
+    <td>North</td>
+    <td><img width="300" src="images/hike6.jpg"></td>
+    <td><a href="/delete-hike/{{_id}}"><i class="far fa-trash-alt fa-1x" style="color:rgb(220,7,55)" title="Delete" pos="bottom" uk-tooltip></i></td>
+  </tr>
+  </tbody>
+</table>
+    </div>
+  </form>
+</div>
+
+
+      <<div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium">
+      <h3 class="uk-card-title uk-text-center"> Please enter your hike suggestions below </h3>
+      <form action="/hike" method="POST">
+        <div class="uk-margin uk-text-left">
+          <label class="uk-form-label" for="form-stacked-text">Hike Location</label>
+          <div class="uk-inline uk-width-1-1">
+            <span class="uk-form-icon" uk-icon="icon: location"></span> <input class="uk-input uk-form-medium" type="text"
+                                                                               name="Hike Location">
+          </div>
+        </div>
+        <div class="uk-margin uk-text-left">
+          <label class="uk-form-label" for="form-stacked-text">Hike Distance</label>
+          <div class="uk-inline uk-width-1-1">
+            <span class="uk-form-icon" uk-icon="icon: comment"></span> <input class="uk-input uk-form-medium"
+                                                                              type="text" name="Hike Distance">
+          </div>
+        </div>
+        <div class="uk-margin uk-text-left">
+          <label class="uk-form-label" for="form-stacked-text">Brief Description</label>
+          <div class="uk-inline uk-width-1-1">
+            <span class="uk-form-icon" uk-icon="icon: comment"></span> <input class="uk-input uk-form-medium" type="text" name="Brief Description">
+          </div>
+          <div class="uk-margin uk-text-left">
+            <label class="uk-form-label" for="form-stacked-text">Category</label>
+            <div class="uk-inline uk-width-1-1">
+              <span class="uk-form-icon" uk-icon="icon: comment"></span> <input class="uk-input uk-form-medium" type="text" name="Brief Description">
+            </div>
+          </div>
+          <div class="uk-margin uk-text-left">
+            <label class="uk-form-label" for="form-stacked-text">Upload a photo</label>
+            <div class="uk-inline uk-width-1-1">
+              <span class="uk-form-icon" uk-icon="icon: comment"></span> <input class="uk-input uk-form-medium" type="text" name="Upload a photo">
+            </div>
+        <div class="uk-margin">
+          <button class="uk-button uk-button-primary uk-button-large uk-width-1-1">Submit Suggestion</button>
+        </div>
+      </form>
+</div>
+
+</body>
+    </html>

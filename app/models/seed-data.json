@@ -1,0 +1,64 @@
+{
+  "users": {
+    "_model": "User",
+    "homer": {
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "email": "h@simpson.com",
+      "password": "SecretSecret"
+    },
+    "marge": {
+      "firstName": "Marge",
+      "lastName": "Simpson",
+      "email": "marge@simpson.com",
+      "password": "SecretSecret"
+    }
+  }
+},
+
+"categories": {
+"_model": "Category",
+"north": {
+"name": "North"
+},
+"east": {
+"name": "East"
+},
+"south": {
+"name": "South"
+},
+"west": {
+"name": "West"
+}
+},
+"pois": {
+"_model": "Poi",
+"one": {
+"name": "Torc Mountain",
+"location": "Kerry",
+"distance": ,
+"description": "Torc Mountain, at 535 metres, is the 329th–highest peak in Ireland on the Arderin list. It is a popular mountain for hill walkers as it has a stone or boarded path from its base at Torc Waterfall to its summit, which has views of the Lakes of Killarney.",
+"creator": "->users.homer",
+"category": "->categories.south",
+"image": "https://res.cloudinary.com/dr9lf2rnc/image/upload/v1630430974/hike-life_o2lr9n.jpg"
+},
+"two": {
+"name": "Croagh Patrick",
+"location": "Mayo",
+"distance": ,
+"description": " Croagh Patrick, nicknamed 'the Reek', is a mountain with a height of 764 m and an important site of pilgrimage in County Mayo, Ireland. The mountain has a pyramid-shaped peak and overlooks Clew Bay, rising above the village of Murrisk, several miles from Westport. It has long been seen as a holy mountain.",
+"creator": "->users.marge",
+"category": "->categories.west",
+"image": "https://res.cloudinary.com/dr9lf2rnc/image/upload/v1630430974/hike4_xwfqdv.jpg"
+},
+"three": {
+"name": "Great Sugarloaf",
+"location": "Wicklow",
+"distance": ,
+"description": "Great Sugar Loaf at 501 metres, is the 404th–highest peak in Ireland on the Arderin scale, however, being below 600 m it does not rank on the Vandeleur-Lynam or Hewitt scales. The mountain is in the far northeastern section of the Wicklow Mountains, in Ireland, and overlooks the village of Kilmacanogue.",
+"creator": "->users.marge",
+"category": "->categories.east",
+"image": "https://res.cloudinary.com/dr9lf2rnc/image/upload/v1630430973/hike1_hawkxy.jpg"
+},
+}
+}
